@@ -1,21 +1,22 @@
-from dataloader import get_dataloader
 import torch
-from collections import Counter
-from datetime import datetime
-from trainer import train
-import models
-from decoder import decode
 import numpy as np
 import argparse
 import random
+from datetime import datetime
+
+
+from training.dataloader import get_dataloader
+from training.trainer import train
+from training import models
+from decoding.decoder import decode
 
 parser = argparse.ArgumentParser(description = 'Running MLMI2 experiments')
 
 # set arguments for training and decoding. 
 parser.add_argument('--seed', type=int, default=123)
-parser.add_argument('--train_json', type=str, default="json/train_fbank_sp.json")
-parser.add_argument('--dev_json', type=str, default="json/dev_fbank.json")
-parser.add_argument('--test_json', type=str, default="json/test_fbank.json")
+parser.add_argument('--train_json', type=str, default="data/json/train_fbank_sp.json")
+parser.add_argument('--dev_json', type=str, default="data/json/dev_fbank.json")
+parser.add_argument('--test_json', type=str, default="data/json/test_fbank.json")
 parser.add_argument('--batch_size', type=int, default=4)
 parser.add_argument('--num_layers', type=int, default=2, help="number of rnn layers")
 parser.add_argument('--fbank_dims', type=int, default=23, help="filterbank dimension")

@@ -5,9 +5,9 @@ import torch
 import torchaudio
 import torchaudio.compliance.kaldi as kaldi
 
-TRAIN_WAV_JSON   = "json/train.json"
-TRAIN_FBANK_JSON = "json/train_fbank.json"
-OUT_JSON         = "json/train_fbank_sp.json"
+TRAIN_WAV_JSON   = "data/json/train.json"
+TRAIN_FBANK_JSON = "data/json/train_fbank.json"
+OUT_JSON         = "data/json/train_fbank_sp.json"
 OUT_ROOT         = Path("fbanks_sp")
 
 RATES = [0.9, 1.1]
