@@ -1,4 +1,4 @@
-#️ BiLSTM-CTC Phoneme Recognition on TIMIT
+# BiLSTM-CTC Phoneme Recognition on TIMIT
 
 End-to-end CTC-based phoneme recognition built on top of a baseline BiLSTM architecture, trained and evaluated on the TIMIT corpus. This is an exploration of regularization, optimization, architecture scaling, data augmentation, and decoding strategies to push Phone Error Rate (PER) from a 30.12% baseline down to **24.70%**, which is competitive with published BLSTM-CTC results on TIMIT.
 
