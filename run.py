@@ -10,7 +10,7 @@ from training.trainer import train
 from training import models
 from decoding.decoder import decode
 
-parser = argparse.ArgumentParser(description = 'Running MLMI2 experiments')
+parser = argparse.ArgumentParser(description = 'Running experiments')
 
 # set arguments for training and decoding. 
 parser.add_argument('--seed', type=int, default=123)
